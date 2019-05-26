@@ -1,0 +1,1 @@
+C:\Users\Djordje\.platformio\python27
