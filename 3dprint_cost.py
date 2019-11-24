@@ -1,4 +1,4 @@
-# Fiksne stvari
+# Fiksne stvari - const values
 filament_cost = 15.2  # Eur / kg
 printer_price = 900.0  # Euro
 assumption_hours = 3000.0 # Hours
@@ -26,9 +26,9 @@ print_time = print_hours + print_minutes / 60.0
 
 print("Amortizacija:" + str(printer_price / assumption_hours))
 
-amortizacija = (printer_price / assumption_hours) * print_time
+amort = (printer_price / assumption_hours) * print_time
 
-first_price = amortizacija + printer_power_hour * print_time + filament_cost * weigh_kg
+first_price = amort + printer_power_hour * print_time + filament_cost * weigh_kg
 print("Energija i filament: " + str(first_price))
 
 second_price = first_price * failure_rate + cleaning
